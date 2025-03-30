@@ -5,3 +5,7 @@ Generated JWT and added snapshot to the snapshots/lab2 directory.
 
 Lab3: Added pom.xml dependencies, created SecurityConfig, extended application.yml file. Generated token and done 3 requests. All requests 
 snapshots added to the snapshots/lab3 directory. 
+
+Lab4: Added PreAuthorize to Controller, created Converter for roles in Spring Security and Keycloak, created SecurityBean, changed SecurityConfig, 
+added configs to application.yml. Created defaultuser with client_user role in Keycloak panel. 
+Snapshots added to the snapshots/lab4 directory. 
