@@ -1,6 +1,10 @@
 spring:
     application:
         name: kc-os
+    data:
+        mongodb:
+            uri: mongodb://localhost:27017/connection
+            database: keycloak
     security:
         oauth2:
             resourceserver:

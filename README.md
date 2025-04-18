@@ -10,4 +10,7 @@ Lab4: Added PreAuthorize to Controller, created Converter for roles in Spring Se
 added configs to application.yml. Created defaultuser with client_user role in Keycloak panel. 
 Snapshots added to the snapshots/lab4 directory. 
 
-Lab5: Exported settings from Keycloak(keycloar/realm/version01).
+Lab5: Exported settings from Keycloak(keycloak/realm/version01).
+
+Lab6: Created a crud functionality for a model, created a functionality to provide audit feature. In postman created a request to create an audited persistence.
+Screenshot added to the snapshots/lab6 directory

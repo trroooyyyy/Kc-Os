@@ -1,4 +1,4 @@
-package pzks.edu.anetrebin.kcos;
+package pzks.edu.anetrebin.kcos.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
+import pzks.edu.anetrebin.kcos.KeycloakJwtAuthenticationConverter;
 
 @Configuration
 @EnableWebSecurity
@@ -20,7 +21,11 @@ public class SecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .cors(Customizer.withDefaults())
+//                .authorizeHttpRequests(request ->
+//                        request.requestMatchers("/items/**")
+//                                .permitAll())
                 .authorizeHttpRequests(
+//                        request -> request.anyRequest().permitAll()
                         request -> request.anyRequest().authenticated()
                 );
 
